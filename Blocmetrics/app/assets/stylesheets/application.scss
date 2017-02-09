@@ -12,11 +12,40 @@
  *
  *= require_tree .
  *= require_self
+ *= require rails_bootstrap_forms
  */
-@import "bootstrap-sprockets";
-@import "bootstrap";
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
 
-.sign_up_view,
- .welcome_view {
+ .container-fluid {
+     padding: 0px;
+ }
+
+ .head_row {
+     background-color: black;
+ }
+
+ .logo_sign {
+     height: 60px;
+     width: 60px;
+ }
+
+ nav {
+     float: right;
+     margin-top: 8px;
+     margin-right: 10px;
+ }
+
+ .bg-info,
+ .bg-danger {
      text-align: center;
- 
+     font-size: 150%;
+ }
+ .app_show_view,
+ .app_new_view,
+ .edit_user_page,
+ .sign_in_page,
+ .sign_up_view,
+ .app_index_page {
+     text-align: center;
+ }
